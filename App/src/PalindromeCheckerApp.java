@@ -5,14 +5,16 @@ public class PalindromeCheckerApp {
         System.out.println("Welcome to Palindrome Checker App");
         System.out.println("Version : 1.0");
 
-        // UC2 logic
-        String word = "madam";
+        // UC3 logic
+        String word = "level";
         String reversed = "";
 
+        // reverse string using loop
         for (int i = word.length() - 1; i >= 0; i--) {
-            reversed += word.charAt(i);
+            reversed = reversed + word.charAt(i);
         }
 
+        // compare strings
         if (word.equals(reversed)) {
             System.out.println(word + " is a Palindrome");
         } else {
